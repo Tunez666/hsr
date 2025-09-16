@@ -1,0 +1,2 @@
+git commit -m "Первый коммит"
+git push -u origin main
