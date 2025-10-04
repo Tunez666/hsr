@@ -1,16 +1,121 @@
+:root{
+  --border: #4682B4;      /* можно заменить на var(--primary) */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* меню слева, аватар справа */
+  align-items: center;
+  /* выравнивание по вертикали */
+  margin: 5px auto;
+  width: 1200px;
+  height: 60px;
+  padding: 0 20px;
+  margin-top: 25px;
+}
+
+nav {
+  border: 5px solid #4682B4;
+  margin: 5px;
+  width: 1200px;
+  height: 50px;
+  text-align: center;
+}
+
 nav ul {
-  list-style: none; /* Убираем маркеры списка */
-  margin: 0;
-  padding: 0;
+  list-style: none;
+  /* Убираем маркеры списка */
+  margin: 10;
+  padding: 200;
 }
 
 nav li {
-  display: inline-block; /* Располагаем элементы в одну строку */
-  margin-right: 10px; /* Добавляем отступ между пунктами меню */
+  display: inline-block;
+  /* Располагаем элементы в одну строку */
+  margin-right: 50px;
+  /* Добавляем отступ между пунктами меню */
+  margin-left: 50px;
 }
 
 nav a {
-  text-decoration: none; /* Убираем подчеркивание ссылок */
+  text-decoration: none;
+  /* Убираем подчеркивание ссылок */
   padding: 10px;
   color: #333;
+}
+
+nav a:hover {
+  background-color: #4682B4;
+  color: white;
+}
+
+.ava {
+  margin-left: 50px;
+  /* отступ от меню */
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.ava img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* картинка ровно заполняет круг */
+}
+
+.content {
+  margin-left: 15px; 
+  width: 1200px;
+  margin: 25px auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* большая картинка */
+.b_pic {
+  width: 350px;    /* фиксированная колонка под обложку */
+  height: 600px;
+  object-fit: cover;
+  border: 5px solid var(--border);
+  display: block;
+}
+
+/* правая колонка — занимает оставшееся */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* карточки последних билдов */
+.latest_ch{
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  box-sizing: border-box;
+  border: 5px solid var(--border);
+  padding: 14px;
+  background: var(--card-bg);
+}
+
+/* каждая карточка */
+.latest_ch a {
+  display: block;
+  width: 120px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.latest_ch a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
