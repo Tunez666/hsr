@@ -1,0 +1,16 @@
+nav ul {
+  list-style: none; /* Убираем маркеры списка */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block; /* Располагаем элементы в одну строку */
+  margin-right: 10px; /* Добавляем отступ между пунктами меню */
+}
+
+nav a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  padding: 10px;
+  color: #333;
+}
