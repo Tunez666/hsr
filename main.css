@@ -1,23 +1,37 @@
-:root{
-  --border: #4682B4;      /* можно заменить на var(--primary) */
+:root {
+  --border: #A087EC;
+  /* внешний фиолетовый контур */
+  --inner-border: #FF8EDB;
+  /* акцентный розовый для внутренних элементов */
+  --bg-dark: #121212;
+  --card-bg: linear-gradient(180deg, rgba(40, 40, 60, 0.9), rgba(25, 25, 35, 0.95));
 }
 
+body {
+  background-color: var(--bg-dark);
+  color: #E0E0E0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ---------------- HEADER ---------------- */
 .header {
   display: flex;
   justify-content: space-between;
-  /* меню слева, аватар справа */
   align-items: center;
-  /* выравнивание по вертикали */
-  margin: 5px auto;
+  margin: 40px auto;
   width: 1200px;
   height: 60px;
   padding: 0 20px;
-  margin-top: 25px;
 }
 
+/* Меню */
 nav {
-  border: 5px solid #4682B4;
-  margin: 5px;
+  border: 2px solid var(--border);
+  padding: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 0 15px rgba(160, 135, 236, 0.25);
+  border-radius: 8px;
+  transition: 0.3s ease;
   width: 1200px;
   height: 50px;
   text-align: center;
@@ -25,38 +39,40 @@ nav {
 
 nav ul {
   list-style: none;
-  /* Убираем маркеры списка */
-  margin: 10;
-  padding: 200;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
   display: inline-block;
-  /* Располагаем элементы в одну строку */
-  margin-right: 50px;
-  /* Добавляем отступ между пунктами меню */
-  margin-left: 50px;
+  margin: 0 50px;
 }
 
 nav a {
   text-decoration: none;
-  /* Убираем подчеркивание ссылок */
   padding: 10px;
-  color: #333;
+  color: #E0E0E0;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background-color: #4682B4;
+  background-color: var(--border);
   color: white;
+  border-radius: 4px;
 }
 
+/* ---------------- AVATAR ---------------- */
 .ava {
   margin-left: 50px;
-  /* отступ от меню */
-  width: 100px;
-  height: 80px;
+  width: 80px;
+  /* уменьшил, чтобы не касался блока */
+  height: 70px;
   overflow: hidden;
   border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: 0 0 12px rgba(160, 135, 236, 0.3);
+  transition: 0.3s ease;
 }
 
 .ava img {
@@ -66,26 +82,37 @@ nav a:hover {
   /* картинка ровно заполняет круг */
 }
 
+/* ---------------- CONTENT ---------------- */
 .content {
-  margin-left: 15px; 
   width: 1200px;
   margin: 25px auto;
   display: flex;
   gap: 40px;
   align-items: flex-start;
   box-sizing: border-box;
+  border: 2px solid var(--border);
+  padding: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 0 15px rgba(160, 135, 236, 0.25);
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
 /* большая картинка */
 .b_pic {
-  width: 350px;    /* фиксированная колонка под обложку */
+  width: 350px;
   height: 600px;
   object-fit: cover;
-  border: 5px solid var(--border);
+  border: 2px solid var(--inner-border);
+  padding: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 0 15px rgba(255, 142, 219, 0.35);
+  border-radius: 8px;
+  transition: 0.3s ease;
   display: block;
 }
 
-/* правая колонка — занимает оставшееся */
+/* правая колонка */
 .right-column {
   flex: 1;
   display: flex;
@@ -93,29 +120,81 @@ nav a:hover {
   gap: 18px;
 }
 
-/* карточки последних билдов */
-.latest_ch{
+/* ---------------- BUILDS (внутренний блок) ---------------- */
+.latest_ch {
   display: flex;
   gap: 18px;
   align-items: stretch;
   box-sizing: border-box;
-  border: 5px solid var(--border);
+  border: 2px solid var(--inner-border);
+  /* РОЗОВЫЙ акцент */
   padding: 14px;
   background: var(--card-bg);
+  box-shadow: 0 0 15px rgba(255, 142, 219, 0.35);
+  /* мягкое розовое свечение */
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
-/* каждая карточка */
+/* карточки */
 .latest_ch a {
   display: block;
   width: 120px;
   height: 160px;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  box-shadow: 0 0 10px rgba(255, 142, 219, 0.15);
+  transition: 0.3s;
 }
+
+.latest_ch a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(255, 142, 219, 0.35);
+}
+
 .latest_ch a img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* ---------------- ARTICLES (внутренний блок) ---------------- */
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  border: 2px solid var(--inner-border);
+  /* розовая рамка */
+  padding: 14px;
+  background: var(--card-bg);
+  box-shadow: 0 0 15px rgba(255, 142, 219, 0.35);
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+/* Ссылки на статьи */
+.articles a {
+  color: #ffd6f5;
+  text-decoration: none;
+  font-weight: 500;
+  background: rgba(255, 142, 219, 0.1);
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.articles a:hover {
+  background: rgba(255, 142, 219, 0.25);
+  color: #fff;
+  text-shadow: 0 0 5px #ffb4e6;
+}
+
+/* общий контейнер для билдов и статей */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
 }

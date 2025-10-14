@@ -1,3 +1,25 @@
+<?php
+require 'connect.php';
+
+$one = "SELECT title
+FROM arcticles
+WHERE id_a = 1;";
+$r_one = $Link->query($one);
+$row_one = $r_one->fetch_assoc();
+
+$two = "SELECT title
+FROM arcticles
+WHERE id_a = 2;";
+$r_two = $Link->query($two);
+$row_two = $r_two->fetch_assoc();
+
+$three = "SELECT title
+FROM arcticles
+WHERE id_a = 3;";
+$r_three = $Link->query($three);
+$row_three = $r_three->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,12 +43,12 @@
 
         <div class="ava">
             <a href="lk.php">
-                <img src="images.jpg" alt="Личный кабинет" title = "Личный кабинет" />
+                <img src="images.jpg" alt="Личный кабинет" title="Личный кабинет" />
             </a>
         </div>
-        </div>
+    </div>
 
-        <div class = "content">
+    <div class="content">
         <img class="b_pic" src="im.png" alt="Красивые картинки" />
 
         <div class="latest_ch">
@@ -40,18 +62,18 @@
                 <img src="ava.jpeg" />
             </a>
         </div>
-        </div>
+
 
         <div class="articles">
-            <a href="">Название статьи</a>
-            <a href="">Название статьи</a>
-            <a href="">Название статьи</a>
+            <a href=""> <?php echo $row_one['title']; ?> </a><br>
+            <a href=""> <?php echo $row_two['title']; ?> </a><br>
+            <a href=""> <?php echo $row_three['title']; ?> </a>
 
         </div>
+    </div>
+    <div class="forum">
 
-        <div class="forum">
-
-        </div>
+    </div>
 
 </body>
 
