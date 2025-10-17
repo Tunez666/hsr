@@ -42,7 +42,7 @@ $row_three = $r_three->fetch_assoc();
         </nav>
 
         <div class="ava">
-            <a href="lk.php">
+            <a href="login.php">
                 <img src="images.jpg" alt="Личный кабинет" title="Личный кабинет" />
             </a>
         </div>
