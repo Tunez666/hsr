@@ -66,8 +66,11 @@
         <mxCell id="WvmGnDZxWMbQ1fW9qhDl-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Обновление данных статьи" vertex="1">
           <mxGeometry height="60" width="120" x="313" y="426" as="geometry" />
         </mxCell>
-        <mxCell id="dtcmqWj-_9gXVAmSgRdD-1" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="БД&amp;nbsp;" vertex="1">
-          <mxGeometry height="30" width="100" x="323" y="535" as="geometry" />
+        <mxCell id="dtcmqWj-_9gXVAmSgRdD-1" parent="1" style="html=1;dashed=0;whiteSpace=wrap;shape=mxgraph.dfd.dataStoreID;align=left;spacingLeft=3;points=[[0,0],[0.5,0],[1,0],[0,0.5],[1,0.5],[0,1],[0.5,1],[1,1]];" value="" vertex="1">
+          <mxGeometry height="51" width="153" x="302" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="0q4EIIJFzbcixEUPm-ma-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="База данных веб приложения &quot;Игровой справочник&quot;" vertex="1">
+          <mxGeometry height="30" width="139.5" x="327.5" y="544.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
