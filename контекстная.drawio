@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36" version="29.3.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.1">
   <diagram name="Страница-1" id="BYxauc_DjT2KHkv6Vv2n">
-    <mxGraphModel dx="983" dy="530" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="983" dy="512" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,10 +46,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-12" edge="1" parent="1" source="vkxLgfepiXE51Q2C4EBe-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=8;entryX=0.999;entryY=0.332;entryDx=0;entryDy=0;entryPerimeter=0;" target="vkxLgfepiXE51Q2C4EBe-27" value="">
+        <mxCell id="vkxLgfepiXE51Q2C4EBe-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;fontSize=8;entryX=0.999;entryY=0.332;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="420" y="266" as="sourcePoint" />
-            <mxPoint x="629" y="231" as="targetPoint" />
+            <mxPoint x="486.52" y="237" as="sourcePoint" />
+            <mxPoint x="634.0010000000002" y="237.03999999999996" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vkxLgfepiXE51Q2C4EBe-16" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" value="Удаленный комментарий" vertex="1">
@@ -57,36 +57,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-13" edge="1" parent="1" source="vkxLgfepiXE51Q2C4EBe-2" style="endArrow=classic;html=1;rounded=0;exitX=0.997;exitY=0.415;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=8;entryX=0.999;entryY=0.374;entryDx=0;entryDy=0;entryPerimeter=0;" target="vkxLgfepiXE51Q2C4EBe-27" value="">
+        <mxCell id="vkxLgfepiXE51Q2C4EBe-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.56;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=8;entryX=1.001;entryY=0.411;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="420" y="266" as="sourcePoint" />
-            <mxPoint x="628" y="245" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-17" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" value="Уведомление автору" vertex="1">
-          <mxGeometry relative="1" x="-0.0107" y="-1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-14" edge="1" parent="1" source="vkxLgfepiXE51Q2C4EBe-2" style="endArrow=classic;html=1;rounded=0;exitX=1.003;exitY=0.56;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=8;entryX=1.001;entryY=0.411;entryDx=0;entryDy=0;entryPerimeter=0;" target="vkxLgfepiXE51Q2C4EBe-27" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="420" y="266" as="sourcePoint" />
-            <mxPoint x="627" y="258" as="targetPoint" />
+            <mxPoint x="483.99500000000006" y="259.60999999999996" as="sourcePoint" />
+            <mxPoint x="631.9289999999997" y="259.00499999999994" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="vkxLgfepiXE51Q2C4EBe-18" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" value="Статус жалобы" vertex="1">
           <mxGeometry relative="1" x="-0.0358" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-15" edge="1" parent="1" source="vkxLgfepiXE51Q2C4EBe-2" style="endArrow=classic;html=1;rounded=0;exitX=0.998;exitY=0.721;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=8;entryX=0.999;entryY=0.458;entryDx=0;entryDy=0;entryPerimeter=0;" target="vkxLgfepiXE51Q2C4EBe-27" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="420" y="266" as="sourcePoint" />
-            <mxPoint x="624" y="272" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-19" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=8;" value="Журнал модерации" vertex="1">
-          <mxGeometry relative="1" x="0.0364" y="-1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -107,7 +85,7 @@
             <mxPoint x="474" y="272" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-23" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=270;fontSize=8;" value="&lt;font&gt;Система уведомлений&lt;/font&gt;" vertex="1">
+        <mxCell id="vkxLgfepiXE51Q2C4EBe-23" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=270;fontSize=8;" value="Администратор" vertex="1">
           <mxGeometry relative="1" x="-0.0026" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -118,7 +96,7 @@
             <mxPoint x="474" y="243" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vkxLgfepiXE51Q2C4EBe-25" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;fontSize=8;" value="Администратор" vertex="1">
+        <mxCell id="vkxLgfepiXE51Q2C4EBe-25" connectable="0" parent="vkxLgfepiXE51Q2C4EBe-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=90;fontSize=8;" value="&lt;font style=&quot;font-size: 5px;&quot;&gt;Редакционная политика&lt;/font&gt;" vertex="1">
           <mxGeometry relative="1" x="-0.1969" y="-1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
