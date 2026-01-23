@@ -4,7 +4,7 @@ session_set_cookie_params(3600);
 session_start();
 require_once "connect.php";
 $tableName = 'users_d';
-
+$_COOKIE;
     if (!empty($username) && !empty($pass)) {
         $query = "SELECT * FROM `$tableName` WHERE username = ?";
         $stmt = mysqli_prepare($Link, $query);
